@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="usdtonrs.css">
+</head>
+<body>
+    <form onsubmit="convert(event)">
+    <div class="conversion">
+        <div class="usdtonpr">
+            <h1>USD TO NPR</h1>
+        </div>
+        <div class="output">
+            <h1 id="result">133.59</h1>
+        </div>
+        <div class="input">
+            <input id="input" type="number" placeholder="Enter amount in USD" value="1">
+            <button><img src="https://www.iconpacks.net/icons/2/free-convert-icon-3212-thumb.png" alt="Convert"></button>
+        </div>
+        <div class="nprtousd">
+            <h1>NPR TO USD</h1>
+        </div>
+        <div class="output">
+            <h1 id="result1">0.0075</h1>
+        </div>
+        <div class="input">
+            <input id="input1" type="number" placeholder="Enter amount in NPR" value="1">
+            <button><img src="https://www.iconpacks.net/icons/2/free-convert-icon-3212-thumb.png" alt="Convert"></button>
+        </div>
+    </div>
+    </form>
+    <script>
+        function convert(e) {
+            e.preventDefault();
+            let USD=document.getElementById("input").value;
+            let result=USD*133.59;
+            document.getElementById("result").innerText=result;
+            let NPR=document.getElementById("input1").value;
+            let output=NPR*0.0075;
+            document.getElementById("result1").innerText=output;
+        }
+    </script>
+</body>
+</html>

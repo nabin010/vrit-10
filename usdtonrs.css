@@ -1,0 +1,38 @@
+.conversion{
+    margin: auto;
+    height: 450px;
+    width: 300px;
+    background: linear-gradient(to bottom right,#2193b0, #6dd5ed);
+}
+.output{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+.input button img{
+    height: 20px;
+    width: 20px;
+}
+.input button{
+    margin-left: 3px;
+    border: 0;
+    border-radius: 15px;
+}
+.input input{
+    border: 0;
+    border-radius: 10px;
+}
+.usdtonpr{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.nprtousd{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
